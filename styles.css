@@ -1,14 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
 }
 
 ul {
     list-style: none;
     display: flex;
-    margin: 0;
     gap: 8px;
 }
 
@@ -70,7 +73,7 @@ a {
     color: #c5c6c6;
 }
 
-.hero-button {
+.hero-button, .modal-button {
     align-self: flex-start;
     color: white;
     background-color: #3882F6;
@@ -87,6 +90,115 @@ a {
     background: #8a8b8e;
     color: #c5c6c6;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom:80px;
+    gap: 32px;
+}
+
+.container-2-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1F2937
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-image {
+    border: 4px solid rgb(105, 129, 215);
+    border-radius: 16px;
+    width: 160px;
+    height: 160px;
+}
+
+.card-text {
+    text-align: center;
+    color: #c5c6c6;
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: #c5c6c6;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-credit {
+    font-size: 22px;
+    font-weight: 700;
+    align-self: flex-end;
+}
+
+.container-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882F6;
+    border-radius: 10px;
+    padding: 48px 128px;
+    flex: 1 1 auto;
+}
+
+.modal > .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.signup-subtext {
+    color: #c5c6c6;
+}
+
+.modal-button {
+    border: 2px solid white;
+}
+
+.footer {
+    display: flex;
+    background: #1F2937;
+    color: #c5c6c6;
     justify-content: center;
     align-items: center;
 }
