@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    gap: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header, .container-1, .container-2, .container-3, .container-4, .footer {
+    display: flex;
+    padding: 16px 15%;
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header, .container-1 {
+    background-color: #1F2937;
+}
+
+.header > .links {
+    font-size: 18px;
+    color: #c5c6c6;
+}
+
+.header > .links > li {
+    margin: 0px 16px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.container-1 {
+    padding-top: 80px;
+    padding-bottom:120px;
+    gap: 32px;
+}
+
+.left {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #F9FAF8;
+}
+
+.hero-subtext {
+    font-size: 18px;
+    color: #c5c6c6;
+}
+
+.hero-button {
+    align-self: flex-start;
+    color: white;
+    background-color: #3882F6;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 32px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.image-placeholder {
+    flex: 1 1 auto;
+    width: 200px;
+    background: #8a8b8e;
+    color: #c5c6c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
